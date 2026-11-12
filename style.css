@@ -1,0 +1,15 @@
+/* R2lab docs - site-wide style overrides */
+
+/* Inria's corporate font, same source and fallback stack as r2lab.inria.fr */
+@import url("https://commons.inria.fr/INRIA_FONT/InriaSans/Web/fonts.css");
+
+:root {
+  --r2lab-font: 'Inria Sans', 'Ubuntu', sans-serif;
+}
+
+/* the book theme uses tailwind's font-sans for body text and headings;
+   code blocks and inline code keep their monospace font (font-mono) */
+html body,
+html .font-sans {
+  font-family: var(--r2lab-font);
+}

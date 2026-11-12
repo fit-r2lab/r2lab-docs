@@ -30,6 +30,7 @@ site:
   title: R2lab docs
   options:
     folders: true
+    style: style.css
   nav:
     - title: User guide
       url: /user
