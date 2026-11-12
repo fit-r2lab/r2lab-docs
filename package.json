@@ -1,0 +1,12 @@
+{
+  "name": "r2lab-docs",
+  "private": true,
+  "scripts": {
+    "diffs": "uv run scripts/make_diffs.py",
+    "start": "npm run diffs && myst start",
+    "build": "npm run diffs && myst build --html"
+  },
+  "devDependencies": {
+    "mystmd": "^1.12.0"
+  }
+}
