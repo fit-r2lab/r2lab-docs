@@ -1,0 +1,34 @@
+version: 1
+project:
+  id: r2lab-docs
+  title: R2lab documentation
+  toc:
+    - file: index.md
+    - file: user/index.md
+      children:
+        - file: user/tutorials/A-ping.md
+    - file: operating/index.md
+      children:
+        - file: operating/one.md
+        - file: operating/two.md
+    - file: developer/index.md
+      children:
+        - file: developer/one.md
+        - file: developer/two.md
+    - file: hardware/index.md
+      children:
+        - file: hardware/one.md
+        - file: hardware/two.md
+site:
+  title: R2lab docs
+  options:
+    folders: true
+  nav:
+    - title: User guide
+      url: /user
+    - title: Operating
+      url: /operating
+    - title: Developer
+      url: /developer
+    - title: Hardware
+      url: /hardware

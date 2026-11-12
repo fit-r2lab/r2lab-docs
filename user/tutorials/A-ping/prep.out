@@ -1,0 +1,44 @@
+your_slicename@faraday:~$ rleases --check
+Checking current reservation for your_slicename OK
+
+your_slicename@faraday:~$ all-off
+reboot05:already off
+reboot19:already off
+reboot28:already off
+reboot04:already off
+... <snip>
+reboot12:ok
+reboot02:ok
+reboot20:ok
+reboot13:ok
+Turning WiFi OFF
+Starting: Intent { act=android.intent.action.MAIN cmp=com.android.settings/.wifi.WifiSettings }
+Turning OFF phone : turning on airplane mode
+Broadcasting: Intent { act=android.intent.action.AIRPLANE_MODE (has extras) }
+Broadcast completed: result=0
+
+your_slicename@faraday:~$ n 1 2
+export NODES="fit01 fit02"
+export NBNODES=2
+
+your_slicename@faraday:~$ rload
+16:12:42 - +000s: Selection: fit01 fit02
+16:12:42 - +000s: Loading image /var/lib/rhubarbe-images/default.ndz
+16:12:42 - +000s: AUTH: checking for a valid lease
+16:12:42 - +000s: AUTH: access granted
+16:12:42 - +000s: fit02 reboot = Sending message 'on' to CMC reboot02
+16:12:42 - +000s: fit01 reboot = Sending message 'on' to CMC reboot01
+16:12:43 - +001s: fit02 reboot = idling for 15s
+16:12:43 - +001s: fit01 reboot = idling for 15s
+16:12:59 - +017s: started <frisbeed@234.5.6.1:10001 on default.ndz at 500 Mibps>
+16:12:59 - +017s: fit01 frisbee_status = trying to telnet..
+16:12:59 - +017s: fit02 frisbee_status = trying to telnet..
+... <snip>
+|############################################################################################|100% |29.56s|Time: 0:00:29
+16:13:44 - +062s: fit02 Uploading successful
+16:13:44 - +062s: fit02 reboot = Sending message 'reset' to CMC reboot02
+16:13:46 - +064s: stopped <frisbeed@234.5.6.1:10001 on default.ndz at 500 Mibps>
+
+your_slicename@faraday:~$ rwait
+<Node fit01>:ssh OK
+<Node fit02>:ssh OK
