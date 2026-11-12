@@ -28,6 +28,8 @@ project:
         - file: hardware/two.md
 site:
   title: R2lab docs
+  logo: assets/logo.svg
+  logo_alt: SLICES-RI - FIT - R2lab
   options:
     folders: true
     style: style.css
