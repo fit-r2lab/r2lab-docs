@@ -1,0 +1,6 @@
+node_modules/
+_build/
+.venv/
+__pycache__/
+.DS_Store
+*.diff
