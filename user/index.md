@@ -23,11 +23,7 @@ subtitle: The R2lab tutorials - let's get you started
 
 ### Examples of experimentation scripts with `nepi-ng`
 
-% TODO: link the entries below as the corresponding pages get ported
-% (legacy: tuto-030 install, tuto-050 B, tuto-060 C, tuto-070 D,
-% tuto-110 troubleshooting, tuto-120 real scale)
-
-nepi-ng: install
+[nepi-ng: install](nepi-ng/install.md)
 : how to install `nepi-ng` on your laptop.
 
 [nepi-ng: the basics](nepi-ng/A-ping.md) - a.k.a. the **A** series
@@ -41,7 +37,7 @@ nepi-ng: install
   - **A5**: run ping between two nodes inside the chamber, on the wired
     network.
 
-nepi-ng: wireless - a.k.a. the **B** series
+[nepi-ng: wireless](nepi-ng/B-wireless.md) - a.k.a. the **B** series
 : a few more pings to see how one can initialize and configure wireless links:
 
   - **B1**: like A5, but on a wireless ad hoc network;
@@ -51,7 +47,7 @@ nepi-ng: wireless - a.k.a. the **B** series
   - **B4**: add an infinite loop that prints out TICK every second;
   - **B5**: same but using a `Watch` instance for showing elapsed time instead.
 
-nepi-ng: file exchange - a.k.a. the **C** series
+[nepi-ng: file exchange](nepi-ng/C-files.md) - a.k.a. the **C** series
 : a full loop doing file transfers, using SFTP to and from the nodes, and an
   example of file transfer between two nodes:
 
@@ -63,7 +59,7 @@ nepi-ng: file exchange - a.k.a. the **C** series
   - **C3bis**: a variant on C2, that deals with a service that is started and
     stopped in sync with another job.
 
-nepi-ng: preparation - a.k.a. the **D** series
+[nepi-ng: preparation](nepi-ng/D-prep.md) - a.k.a. the **D** series
 : examples that deal with preparing the testbed from a `nepi-ng` script:
 
   - **D1**: adding a command-line option to load images;
@@ -71,27 +67,27 @@ nepi-ng: preparation - a.k.a. the **D** series
   - **D3**: passing chosen nodes on the command line;
   - **D4**: using a nested scheduler, for more modular scripts.
 
-nepi-ng: troubleshooting guidelines
+[nepi-ng: troubleshooting guidelines](nepi-ng/troubleshooting.md)
 : how to check for common mistakes, how to check your software environment,
   how to enable more verbosity.
 
-nepi-ng: real scale examples
+[nepi-ng: real scale examples](nepi-ng/real-scale.md)
 : dealing with any number of nodes, run pings between all couples of nodes.
 
 ### Other stuff
 
-R2lab and OpenAirInterface
+[R2lab and OpenAirInterface](5g.md)
 : some indications on the features present on R2lab to deploy experiments
   based on OpenAirInterface.
 
-FAQ
+[FAQ](resources/faq.md)
 
-Video tutorials on YouTube
+[Video tutorials on YouTube](resources/youtube.md)
 : an end-to-end wireless experiment, and an OAI 5G experiment (setting up an
   OpenAirInterface-based 5G infrastructure, and a tour in the chamber using
   Skype on a commercial android phone).
 
-Using notebooks
+[Using notebooks](resources/notebooks.md)
 :::::
 
 :::::{tab-item} CONTACT

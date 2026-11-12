@@ -8,6 +8,10 @@ For each step N > 1 we write <LETTER><N>-<anything>.diff, a unified diff
 against the file of step N-1, with *full* context so that the whole
 program is shown, with inserted/deleted lines highlighted.
 
+Pairs that do not follow that convention (a series starting from the last
+step of another one, a variant like C3bis, ...) are listed explicitly in
+scripts/diffs.toml, as [[pair]] entries with 'new' and 'old' paths.
+
 Generated files are git-ignored; run through `npm start` / `npm run build`
 or directly with `uv run scripts/make_diffs.py [dir ...]`.
 """
@@ -15,6 +19,7 @@ or directly with `uv run scripts/make_diffs.py [dir ...]`.
 import re
 import sys
 import difflib
+import tomllib
 from pathlib import Path
 
 STEP = re.compile(r"^([A-Z])(\d+)-.*\.py$")
@@ -29,6 +34,26 @@ def steps_in(directory: Path):
     return found
 
 
+def write_diff(old: Path, new: Path):
+    lines = difflib.unified_diff(
+        old.read_text().splitlines(keepends=True),
+        new.read_text().splitlines(keepends=True),
+        n=FULL,
+    )
+    # drop the '---', '+++' and '@@' header lines: keep only the body
+    body = list(lines)[3:]
+    new.with_suffix(".diff").write_text("".join(body))
+
+
+def make_manifest_diffs(manifest: Path) -> int:
+    if not manifest.exists():
+        return 0
+    pairs = tomllib.loads(manifest.read_text()).get("pair", [])
+    for pair in pairs:
+        write_diff(Path(pair["old"]), Path(pair["new"]))
+    return len(pairs)
+
+
 def make_diffs(directory: Path) -> int:
     steps = steps_in(directory)
     count = 0
@@ -36,14 +61,7 @@ def make_diffs(directory: Path) -> int:
         previous = steps.get((letter, n - 1))
         if previous is None:
             continue
-        lines = difflib.unified_diff(
-            previous.read_text().splitlines(keepends=True),
-            path.read_text().splitlines(keepends=True),
-            n=FULL,
-        )
-        # drop the '---', '+++' and '@@' header lines: keep only the body
-        body = list(lines)[3:]
-        path.with_suffix(".diff").write_text("".join(body))
+        write_diff(previous, path)
         count += 1
     return count
 
@@ -54,6 +72,7 @@ def main():
     for root in roots:
         for directory in {p.parent for p in root.rglob("*.py")}:
             total += make_diffs(directory)
+    total += make_manifest_diffs(Path("scripts/diffs.toml"))
     print(f"make_diffs: {total} diff(s) generated")
 
 

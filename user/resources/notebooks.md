@@ -1,0 +1,87 @@
+---
+title: "R2lab Notebooks"
+---
+
+# R2lab Notebooks
+
+::::::{tab-set}
+
+:::::{tab-item} Intro
+
+### Jupyter notebooks for reproducible research
+
+We are convinced that the general approach of writing Jupyter
+notebooks is an effective means to improve research
+reproducibility.
+
+In this section we give some links to runnable notebooks, with the
+hope to foster this medium as a common practice.
+
+### Hosting at mybinder
+
+A notebook requires a so-called "kernel", typically a python interpreter, and thus computing resources.
+
+There are several options for running such a document :
+
+* install jupyter locally and run the notebook from your computer;
+  this also implies that you install all the dependencies for that
+  experiment,
+
+* or run the notebook from a dedicated infrastructure; `mybinder.org`
+  is one such infrastructure that lets us easily expose such dedicated
+  notebook services from just a github repository.
+
+### Hosted notebooks, ssh keys and authentication
+
+These two approaches have their obvious pros and cons.
+
+The hosted approach allows for instant gratification, but on the other
+hand has more limitations, and in the case of R2lab in particular, it
+will not let you actually log into the testbed, because the docker
+container that runs behind your mybinder notebook has no knowledge of
+your ssh credentials.
+
+So going for a local installation is a little more tedious, but offers
+more capabilities.
+:::::
+
+:::::{tab-item} Radiomap
+
+### Building a radiomap
+
+Our first example of a runnable notebook does not address a research
+theme exactly, but hopes to serve as a methodological guidelines on a
+representative subject. Our pretext here is to gather
+calibration-oriented data, i.e. perceived power at node (a) when node
+(b) is emitting, for all couples of nodes.
+
+You can find the source for this notebook:
+
+* [under github in the r2lab-demos area](https://github.com/fit-r2lab/r2lab-demos/tree/master/radiomap).  This repo
+  contains all the needed code to collect your own data; because of the
+  limitations exposed above, the repository also contains some
+  gathered data, so that visualization can be done right away from mybinder as well
+
+* in mybinder here :
+  [radiomap ![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/fit-r2lab/r2lab-demos/master?filepath=radiomap%2Fradiomap.ipynb)
+:::::
+
+:::::{tab-item} batman/OLSR
+
+### Comparing batman *vs* OLSR
+
+Another example, similar to radiomap, was about gathering data in order to
+comparatively assess these 2 mesh routing protocols.
+
+You can find the source for this notebook:
+
+* [under github in the r2lab-demos area](https://github.com/fit-r2lab/r2lab-demos/tree/master/batman-vs-olsr).  This repo
+  contains all the needed code to collect your own data; because of the
+  limitations exposed above, the repository also contains some
+  gathered data, so that visualization can be done right away from mybinder as well
+
+* in mybinder here :
+  [batman-vs-olsr ![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/fit-r2lab/r2lab-demos/master?filepath=batman-vs-olsr%2Fbatman-vs-olsr.ipynb)
+:::::
+
+::::::

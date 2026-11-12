@@ -13,7 +13,19 @@ project:
             - file: user/getting-started/graphic-sessions.md
         - title: nepi-ng
           children:
+            - file: user/nepi-ng/install.md
             - file: user/nepi-ng/A-ping.md
+            - file: user/nepi-ng/B-wireless.md
+            - file: user/nepi-ng/C-files.md
+            - file: user/nepi-ng/D-prep.md
+            - file: user/nepi-ng/troubleshooting.md
+            - file: user/nepi-ng/real-scale.md
+        - file: user/5g.md
+        - title: Resources
+          children:
+            - file: user/resources/faq.md
+            - file: user/resources/youtube.md
+            - file: user/resources/notebooks.md
     - file: operating/index.md
       children:
         - file: operating/one.md

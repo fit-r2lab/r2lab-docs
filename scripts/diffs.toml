@@ -1,0 +1,48 @@
+[[pair]]
+new = "user/nepi-ng/B-wireless/B1-wireless.py"
+old = "user/nepi-ng/A-ping/A5-ping.py"
+
+[[pair]]
+new = "user/nepi-ng/B-wireless/B2-wireless.py"
+old = "user/nepi-ng/B-wireless/B1-wireless.py"
+
+[[pair]]
+new = "user/nepi-ng/B-wireless/B3-wireless.py"
+old = "user/nepi-ng/B-wireless/B2-wireless.py"
+
+[[pair]]
+new = "user/nepi-ng/B-wireless/B4-wireless.py"
+old = "user/nepi-ng/B-wireless/B3-wireless.py"
+
+[[pair]]
+new = "user/nepi-ng/B-wireless/B5-wireless.py"
+old = "user/nepi-ng/B-wireless/B4-wireless.py"
+
+[[pair]]
+new = "user/nepi-ng/C-files/C2-files.py"
+old = "user/nepi-ng/C-files/C1-files.py"
+
+[[pair]]
+new = "user/nepi-ng/C-files/C3-files.py"
+old = "user/nepi-ng/C-files/C2-files.py"
+
+[[pair]]
+new = "user/nepi-ng/C-files/C3bis-files.py"
+old = "user/nepi-ng/C-files/C2-files.py"
+
+[[pair]]
+new = "user/nepi-ng/D-prep/D1-prep.py"
+old = "user/nepi-ng/A-ping/A5-ping.py"
+
+[[pair]]
+new = "user/nepi-ng/D-prep/D2-prep.py"
+old = "user/nepi-ng/D-prep/D1-prep.py"
+
+[[pair]]
+new = "user/nepi-ng/D-prep/D3-prep.py"
+old = "user/nepi-ng/D-prep/D2-prep.py"
+
+[[pair]]
+new = "user/nepi-ng/D-prep/D4-prep.py"
+old = "user/nepi-ng/D-prep/D3-prep.py"
+

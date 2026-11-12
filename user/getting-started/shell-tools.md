@@ -352,10 +352,7 @@ help
 
 to get a reminder.
 
-% TODO: link to the phones section of the 5G page once it is ported
-% (legacy: tuto-130-5g.md#PHONES)
-
-Please refer to the 5G offering page for more details on this offering, and how
+Please refer to [the 5G offering page](../5g.md) (PHONES tab) for more details on this offering, and how
 to manage these phones e.g. through a VNC session.
 :::::
 
