@@ -6,7 +6,14 @@ project:
     - file: index.md
     - file: user/index.md
       children:
-        - file: user/tutorials/A-ping.md
+        - title: Getting started
+          children:
+            - file: user/getting-started/registration.md
+            - file: user/getting-started/shell-tools.md
+            - file: user/getting-started/graphic-sessions.md
+        - title: nepi-ng
+          children:
+            - file: user/nepi-ng/A-ping.md
     - file: operating/index.md
       children:
         - file: operating/one.md

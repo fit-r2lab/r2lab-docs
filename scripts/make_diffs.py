@@ -49,7 +49,7 @@ def make_diffs(directory: Path) -> int:
 
 
 def main():
-    roots = [Path(a) for a in sys.argv[1:]] or [Path("user/tutorials")]
+    roots = [Path(a) for a in sys.argv[1:]] or [Path("user")]
     total = 0
     for root in roots:
         for directory in {p.parent for p in root.rglob("*.py")}:

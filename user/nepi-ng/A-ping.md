@@ -26,8 +26,7 @@ For this first series we assume these 2 steps are performed manually.
 
 #### Getting a reservation
 
-Once logged in on the website, go to the booking page (TODO: link once
-ported). In a nutshell, in the calendar:
+Once logged in on the website, go to the [booking page](https://r2lab.inria.fr/book.md). In a nutshell, in the calendar:
 
 * click once in a free slot to create a reservation;
 * drag a reservation to change it;
@@ -49,10 +48,10 @@ ssh your_slicename@faraday.inria.fr
 
 If your public key is not at its standard location, add the `-i`
 option with the path to it. On `Permission denied`, go back to the
-registration tutorial (TODO: link once ported) to troubleshoot access.
+[registration tutorial](../getting-started/registration.md) to troubleshoot access.
 
-Once on `faraday`, type the following (explained in the shell-tools
-tutorial):
+Once on `faraday`, type the following (explained in the
+[shell tools tutorial](../getting-started/shell-tools.md)):
 
 ```bash
 # always a good idea to check you currently own the reservation
