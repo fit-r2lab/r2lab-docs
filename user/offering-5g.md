@@ -7,7 +7,7 @@ title: "5G offering"
 ::::::{tab-set}
 
 :::::{tab-item} INTRO
-:label: tab-5g-intro
+:label: tab-offering-5g-intro
 
 % TODO: this page dates back to 2016-2017 (Nexus 5 phones, early OAI images);
 % to be reviewed for accuracy against the current 5G offering.
@@ -31,13 +31,13 @@ pip3 install r2lab
 :::::
 
 :::::{tab-item} PHONES
-:label: tab-5g-phones
+:label: tab-offering-5g-phones
 
 ### Phone setup
 
 Here's the generic setup regarding the commercial phones available
 
-```{figure} 5g/macphone.png
+```{figure} offering-5g/macphone.png
 :width: 60%
 :align: center
 :class: text-center
@@ -135,7 +135,7 @@ shell@hammerhead:/ $
 
 Another way to control the phone is through VNC, or equivalently the *Screen Sharing* application if your own computer is a MAC. This way you can obtain a video session in `macphone1`, as illustrated below, and from that point you can run the *Vysor* application and see the phone screen, and interact with it as if it were in your hand.
 
-```{figure} 5g/screen-sharing.png
+```{figure} offering-5g/screen-sharing.png
 :width: 60%
 :align: center
 :class: text-center
@@ -159,7 +159,7 @@ password : tester++
 :::::
 
 :::::{tab-item} OAI IMAGES
-:label: tab-5g-oai-images
+:label: tab-offering-5g-oai-images
 
 ### Images
 
@@ -204,7 +204,7 @@ There is room for quite some improvement in these tools; if of interest, feel fr
 :::::
 
 :::::{tab-item} WRAP UP
-:label: tab-5g-wrap-up
+:label: tab-offering-5g-wrap-up
 
 The software and hardware featured at R2lab allow to setup an experimental 5G network inside the anechoic chamber.
 

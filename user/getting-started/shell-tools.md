@@ -356,7 +356,7 @@ help
 
 to get a reminder.
 
-Please refer to [the 5G offering page](../5g.md) ([PHONES tab](../5g.md#tab-5g-phones)) for more details on this offering, and how
+Please refer to [the 5G offering page](../offering-5g.md) ([PHONES tab](../offering-5g.md#tab-offering-5g-phones)) for more details on this offering, and how
 to manage these phones e.g. through a VNC session.
 :::::
 

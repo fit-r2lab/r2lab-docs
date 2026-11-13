@@ -20,7 +20,7 @@ project:
             - file: user/nepi-ng/D-prep.md
             - file: user/nepi-ng/troubleshooting.md
             - file: user/nepi-ng/real-scale.md
-        - file: user/5g.md
+        - file: user/offering-5g.md
         - title: Resources
           children:
             - file: user/resources/faq.md

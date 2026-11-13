@@ -77,7 +77,7 @@ subtitle: The R2lab tutorials - let's get you started
 
 ### Other stuff
 
-[R2lab and OpenAirInterface](5g.md)
+[R2lab and OpenAirInterface](offering-5g.md)
 : some indications on the features present on R2lab to deploy experiments
   based on OpenAirInterface.
 
