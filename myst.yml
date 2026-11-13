@@ -41,9 +41,10 @@ project:
 site:
   template: https://github.com/flotpython/myst-theme/releases/download/custom/book-theme.zip
   title: R2lab docs
-  logo: assets/logo.svg
-  logo_alt: SLICES-RI - FIT - R2lab
   options:
+    logo: assets/logo.svg
+    logo_alt: SLICES-RI - FIT - R2lab
+    logo_url: https://r2lab.inria.fr
     folders: true
     style: style.css
   nav:

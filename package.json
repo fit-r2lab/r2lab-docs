@@ -4,7 +4,8 @@
   "scripts": {
     "diffs": "uv run scripts/make_diffs.py",
     "start": "npm run diffs && myst start",
-    "build": "npm run diffs && myst build --html"
+    "build": "npm run diffs && myst build --html",
+    "build:prod": "npm run diffs && BASE_URL=/docs myst build --html"
   },
   "devDependencies": {
     "mystmd": "^1.12.0"
