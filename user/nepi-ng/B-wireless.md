@@ -7,6 +7,7 @@ title: "nepi-ng - B - wireless"
 ::::::{tab-set}
 
 :::::{tab-item} INTRO
+:label: tab-b-wireless-intro
 
 ### Prerequisites
 
@@ -41,12 +42,13 @@ seen ways to run remotely simple commands. In this section we will see
 simple means to come up with more complex logic, simply by using shell
 scripts that are pushed remotely under the hood before they are
 triggered. This is what the `RunString` and `RunScript` classes are
-about. Let us see them in action right away (tab **B1**).
+about. Let us see them in action right away ([tab **B1**](#tab-b1)).
 :::::
 
 :::::{tab-item} B1
+:label: tab-b1
 
-### Objective
+### B1: Objective
 
 We are going to run the exact same experiment [as in the previous run
 A5](A-ping.md), that is to say a simple ping triggered on
@@ -94,40 +96,48 @@ python variables as arguments. For example this is how
 As you will see in the sample output below, it takes some time for the
 IP connectivity to be established after the driver is configured.
 
-### The code
+### B1: The code
 
 :::{div}
 :class: text-right
 {download}`⬇ Download B1-wireless.py <B-wireless/B1-wireless.py>`
 :::
 
-````{dropdown} Full code of B1-wireless.py (without the diff highlighting)
+::::{tab-set}
+:::{tab-item} Full code
+:sync: code-full
+
 ```{literalinclude} B-wireless/B1-wireless.py
 :language: python
 :caption: B1-wireless.py
 ```
-````
+:::
+:::{tab-item} Diff from A5
+:sync: code-diff
 
 ```{literalinclude} B-wireless/B1-wireless.diff
 :language: diff
 :caption: Changes from A5-ping.py to B1-wireless.py
 ```
+:::
+::::
 
-### Sample output
+### B1: Sample output
 
 ````{dropdown} Sample output: $ python3 B1-wireless.py
 ```{literalinclude} B-wireless/B1.out
 ```
 ````
 
-### Next
+### B1: Next
 
-Let us see some variants on that theme in the next tab (**B2**)
+Let us see some variants on that theme in [the next tab (**B2**)](#tab-b2)
 :::::
 
 :::::{tab-item} B2
+:label: tab-b2
 
-### Objective
+### B2: Objective
 
 In this new variant, we are going to illustrate a few convenient tricks:
 
@@ -195,7 +205,7 @@ About that last point, note that other types of formatters are
   page](http://apssh.readthedocs.io/en/latest/API.html#module-apssh.formatters)
   for more info on other available formatters.
 
-### The code
+### B2: The code
 
 ```{figure} B-wireless/B2.png
 :width: 60%
@@ -210,35 +220,43 @@ The B2 scenario
 {download}`⬇ Download B2-wireless.py <B-wireless/B2-wireless.py>`
 :::
 
-````{dropdown} Full code of B2-wireless.py (without the diff highlighting)
+::::{tab-set}
+:::{tab-item} Full code
+:sync: code-full
+
 ```{literalinclude} B-wireless/B2-wireless.py
 :language: python
 :caption: B2-wireless.py
 ```
-````
+:::
+:::{tab-item} Diff from B1
+:sync: code-diff
 
 ```{literalinclude} B-wireless/B2-wireless.diff
 :language: diff
 :caption: Changes from B1-wireless.py to B2-wireless.py
 ```
+:::
+::::
 
-### Sample output
+### B2: Sample output
 
 ````{dropdown} Sample output: $ python3 B2-wireless.py
 ```{literalinclude} B-wireless/B2.out
 ```
 ````
 
-### Next
+### B2: Next
 
-In the next variant (tab **B3**), we are going to see
+In the next variant ([tab **B3**](#tab-b3)), we are going to see
 how we can better esimate the time it takes for the ad hoc network to
 actually come up.
 :::::
 
 :::::{tab-item} B3
+:label: tab-b3
 
-### Objective
+### B3: Objective
 
 In this variant, we will see how we can even design our experiment so
 that all **the shell code** goes **in a single file**, working as a
@@ -291,7 +309,7 @@ foo arg:  2
 foo arg:  3 4
 ```
 
-### The code
+### B3: The code
 
 Make sure you download both files in the same location before trying to run the python script.
 
@@ -308,17 +326,24 @@ The B3 scenario
 {download}`⬇ Download B3-wireless.py <B-wireless/B3-wireless.py>`
 :::
 
-````{dropdown} Full code of B3-wireless.py (without the diff highlighting)
+::::{tab-set}
+:::{tab-item} Full code
+:sync: code-full
+
 ```{literalinclude} B-wireless/B3-wireless.py
 :language: python
 :caption: B3-wireless.py
 ```
-````
+:::
+:::{tab-item} Diff from B2
+:sync: code-diff
 
 ```{literalinclude} B-wireless/B3-wireless.diff
 :language: diff
 :caption: Changes from B2-wireless.py to B3-wireless.py
 ```
+:::
+::::
 
 :::{div}
 :class: text-right
@@ -330,22 +355,23 @@ The B3 scenario
 :caption: B3-wireless.sh
 ```
 
-### Sample output
+### B3: Sample output
 
 ````{dropdown} Sample output: $ python3 B3-wireless.py
 ```{literalinclude} B-wireless/B3.out
 ```
 ````
 
-### Next
+### B3: Next
 
 Let us proceed on this series with an example that adds a
-cyclic task (tab **B4**) to this scenario.
+cyclic task ([tab **B4**](#tab-b4)) to this scenario.
 :::::
 
 :::::{tab-item} B4
+:label: tab-b4
 
-### Objective
+### B4: Objective
 
 In this example, we will just for fun add an
 infinite cyclic task in the scheduler. Here we will simply write a TICK
@@ -372,7 +398,7 @@ schedulers:
 * you are always free to define your own label on a given job, like we
   do here with the `infinite clock` job.
 
-### The code
+### B4: The code
 
 ```{figure} B-wireless/B4.png
 :width: 60%
@@ -387,35 +413,43 @@ The B4 scenario
 {download}`⬇ Download B4-wireless.py <B-wireless/B4-wireless.py>`
 :::
 
-````{dropdown} Full code of B4-wireless.py (without the diff highlighting)
+::::{tab-set}
+:::{tab-item} Full code
+:sync: code-full
+
 ```{literalinclude} B-wireless/B4-wireless.py
 :language: python
 :caption: B4-wireless.py
 ```
-````
+:::
+:::{tab-item} Diff from B3
+:sync: code-diff
 
 ```{literalinclude} B-wireless/B4-wireless.diff
 :language: diff
 :caption: Changes from B3-wireless.py to B4-wireless.py
 ```
+:::
+::::
 
-### Sample output
+### B4: Sample output
 
 ````{dropdown} Sample output: $ python3 B4-wireless.py
 ```{literalinclude} B-wireless/B4.out
 ```
 ````
 
-### Next
+### B4: Next
 
-In the next example (tab **B5**),
+In the next example ([tab **B5**](#tab-b5)),
 we will see a convenience class named `Watch`, that comes in
 handy in most experiments as it allows to keep track of elapsed time since the beginning of an experiment.
 :::::
 
 :::::{tab-item} B5
+:label: tab-b5
 
-### Objective
+### B5: Objective
 
 In this final example in the series, we will take the chance to illustrate
 a convenience class named `Watch` from `asynciojobs`, that allows to keep
@@ -425,7 +459,7 @@ beginning of the experiment.
 So here, we create a `Watch` instance, and use it when the clock is ticking,
 instead of showing plain wall clock time.
 
-### The code
+### B5: The code
 
 ```{figure} B-wireless/B5.png
 :width: 60%
@@ -440,31 +474,39 @@ The B5 scenario
 {download}`⬇ Download B5-wireless.py <B-wireless/B5-wireless.py>`
 :::
 
-````{dropdown} Full code of B5-wireless.py (without the diff highlighting)
+::::{tab-set}
+:::{tab-item} Full code
+:sync: code-full
+
 ```{literalinclude} B-wireless/B5-wireless.py
 :language: python
 :caption: B5-wireless.py
 ```
-````
+:::
+:::{tab-item} Diff from B4
+:sync: code-diff
 
 ```{literalinclude} B-wireless/B5-wireless.diff
 :language: diff
 :caption: Changes from B4-wireless.py to B5-wireless.py
 ```
+:::
+::::
 
-### Sample output
+### B5: Sample output
 
 ````{dropdown} Sample output: $ python3 ./B5-wireless.py
 ```{literalinclude} B-wireless/B5.out
 ```
 ````
 
-### Next
+### B5: Next
 
-It is now time to wrap up this series (tab **WRAP UP**).
+It is now time to wrap up this series ([tab **WRAP UP**](#tab-b-wireless-wrap-up)).
 :::::
 
 :::::{tab-item} WRAP UP
+:label: tab-b-wireless-wrap-up
 
 We now know how to:
 

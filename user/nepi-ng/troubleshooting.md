@@ -7,6 +7,7 @@ title: "nepi-ng - troubleshooting"
 ::::::{tab-set}
 
 :::::{tab-item} INTRO
+:label: tab-troubleshooting-intro
 
 ### Objectives
 
@@ -27,6 +28,7 @@ This tuto is organized in several parts
 :::::
 
 :::::{tab-item} COMMON MISTAKES
+:label: tab-troubleshooting-common-mistakes
 
 ### Check for the obvious
 
@@ -95,10 +97,11 @@ fit11:2016-11-29@00:12 - built-on fit03 - from-image fedora-23-v10-wireless-name
 fit12:2016-11-29@00:12 - built-on fit03 - from-image fedora-23-v10-wireless-names - by r2lab-tutorial
 ```
 
-Otherwise, check out the next section on code updates. (tab **CODE UPDATE**).
+Otherwise, check out the next section on code updates. ([tab **CODE UPDATE**](#tab-troubleshooting-code-update)).
 :::::
 
 :::::{tab-item} CODE UPDATE
+:label: tab-troubleshooting-code-update
 
 The software involved in R2lab, either `nepi-ng` or the shell
 utilities, are evolving quickly, especially during the current rollout
@@ -163,10 +166,11 @@ whenever they source `/root/r2lab-embedded/shell/node.sh`, call
 `git-pull-r2lab` which will update the whole repository `/root/r2lab-embedded`
 from the latest version published on github.
 
-Otherwise, check out the next section on verbosity in your scripts. (tab **VERBOSITY**).
+Otherwise, check out the next section on verbosity in your scripts. ([tab **VERBOSITY**](#tab-troubleshooting-verbosity)).
 :::::
 
 :::::{tab-item} VERBOSITY
+:label: tab-troubleshooting-verbosity
 
 OK, so you have tried everything else, you can't seem to find why your
 script does not behave like you expected it to. Here's a brief
@@ -295,6 +299,7 @@ give you details of the jobs being started, and their are done.
 :::::
 
 :::::{tab-item} HANGING
+:label: tab-troubleshooting-hanging
 
 Sometimes a scheduler may exhibit the symptom of not completing as you expect it
 to, and it may be a little hard to understand which job is causing the issue.

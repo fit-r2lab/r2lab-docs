@@ -7,6 +7,7 @@ title: About graphic sessions
 ::::::{tab-set}
 
 :::::{tab-item} X11 SESSIONS
+:label: tab-graphic-sessions-x11-sessions
 ### X11 sessions
 
 If your laptop already runs an X server, you can create an X11 tunnel using
@@ -30,6 +31,7 @@ xterm &
 :::::
 
 :::::{tab-item} VNC SESSIONS
+:label: tab-graphic-sessions-vnc-sessions
 ### VNC sessions
 
 If your laptop runs a VNC client, that's the easy way to run interactive tools

@@ -8,7 +8,6 @@ R2lab is an open wireless testbed hosted by Inria in Sophia Antipolis, in an
 anechoic chamber. Pick the guide that matches what you want to do.
 
 ::::{grid} 1 1 2 2
-:gutter: 3
 
 :::{card} User guide
 :link: /user

@@ -7,6 +7,7 @@ title: "nepi-ng - D - testbed preping"
 ::::::{tab-set}
 
 :::::{tab-item} INTRO
+:label: tab-d-prep-intro
 
 ### Preparation
 
@@ -116,13 +117,14 @@ your bash script:
 source /etc/profile.d/nodes.sh
 ```
 
-All this being said, let us now see in the next tab (**D1**) how to extend the A5 script and turn it into D1
+All this being said, let us now see in [the next tab (**D1**)](#tab-d1) how to extend the A5 script and turn it into D1
 that knows how to load images.
 :::::
 
 :::::{tab-item} D1
+:label: tab-d1
 
-### Objective
+### D1: Objective
 
 When working on an experiment, you will find yourself making several
 reservations, as not everything works as planned the first time.
@@ -152,7 +154,7 @@ For this step, we start back from the last code in the A section - namely
 The A5 scenario
 ```
 
-### The code
+### D1: The code
 
 Every time we will see a piece of code, you can download the raw code
 with the download link above it.
@@ -170,19 +172,26 @@ The D1 scenario
 {download}`⬇ Download D1-prep.py <D-prep/D1-prep.py>`
 :::
 
-````{dropdown} Full code of D1-prep.py (without the diff highlighting)
+::::{tab-set}
+:::{tab-item} Full code
+:sync: code-full
+
 ```{literalinclude} D-prep/D1-prep.py
 :language: python
 :caption: D1-prep.py
 ```
-````
+:::
+:::{tab-item} Diff from A5
+:sync: code-diff
 
 ```{literalinclude} D-prep/D1-prep.diff
 :language: diff
 :caption: Changes from A5-ping.py to D1-prep.py
 ```
+:::
+::::
 
-### Sample output
+### D1: Sample output
 
 Here's the output of the script when run with the `-l` option.
 
@@ -191,15 +200,16 @@ Here's the output of the script when run with the `-l` option.
 ```
 ````
 
-### Next
+### D1: Next
 
-We will now see in tab D2 how to also make sure all the rest of the testbed
+We will now see in [tab **D2**](#tab-d2) how to also make sure all the rest of the testbed
 is turned off.
 :::::
 
 :::::{tab-item} D2
+:label: tab-d2
 
-### Objectives
+### D2: Objectives
 
 In this section we study a variant `D2`, that is naturally based on `D1`, and
 that also makes sure that the unused nodes in the testbed are properly turned
@@ -237,7 +247,7 @@ be either a plain job object, or a collection of jobs; in the code above, the
 made a list with 2 jobs, and this is how we simply achieve the layout for the
 new dependency graph.
 
-### The code
+### D2: The code
 
 ```{figure} D-prep/D2.png
 :width: 60%
@@ -252,19 +262,26 @@ The D2 scenario
 {download}`⬇ Download D2-prep.py <D-prep/D2-prep.py>`
 :::
 
-````{dropdown} Full code of D2-prep.py (without the diff highlighting)
+::::{tab-set}
+:::{tab-item} Full code
+:sync: code-full
+
 ```{literalinclude} D-prep/D2-prep.py
 :language: python
 :caption: D2-prep.py
 ```
-````
+:::
+:::{tab-item} Diff from D1
+:sync: code-diff
 
 ```{literalinclude} D-prep/D2-prep.diff
 :language: diff
 :caption: Changes from D1-prep.py to D2-prep.py
 ```
+:::
+::::
 
-### Sample output
+### D2: Sample output
 
 No great news here, just observe how all the other nodes, and the phones, get turned off while the 2 target nodes are being imaged.
 
@@ -273,14 +290,15 @@ No great news here, just observe how all the other nodes, and the phones, get tu
 ```
 ````
 
-### Next
+### D2: Next
 
-We will now see in tab D3 how to pass target nodes on the command-line.
+We will now see in [tab **D3**](#tab-d3) how to pass target nodes on the command-line.
 :::::
 
 :::::{tab-item} D3
+:label: tab-d3
 
-### Objectives
+### D3: Objectives
 
 In this section, we will change the `D2` script so that the target nodes can be
 passed on the command line, instead of using the hardwired nodes 1 and 2.
@@ -304,7 +322,7 @@ with a missing `0`, so as you can see it is very basic.
 
 A complete reference can be [found on readthedocs.io](http://r2lab.readthedocs.io/).
 
-### The code
+### D3: The code
 
 ```{figure} D-prep/D3.png
 :width: 60%
@@ -319,19 +337,26 @@ The D3 scenario
 {download}`⬇ Download D3-prep.py <D-prep/D3-prep.py>`
 :::
 
-````{dropdown} Full code of D3-prep.py (without the diff highlighting)
+::::{tab-set}
+:::{tab-item} Full code
+:sync: code-full
+
 ```{literalinclude} D-prep/D3-prep.py
 :language: python
 :caption: D3-prep.py
 ```
-````
+:::
+:::{tab-item} Diff from D2
+:sync: code-diff
 
 ```{literalinclude} D-prep/D3-prep.diff
 :language: diff
 :caption: Changes from D2-prep.py to D3-prep.py
 ```
+:::
+::::
 
-### Sample output
+### D3: Sample output
 
 It is easy to select other nodes with the `-a` and `-b` option.
 
@@ -340,15 +365,16 @@ It is easy to select other nodes with the `-a` and `-b` option.
 ```
 ````
 
-### Next
+### D3: Next
 
-In the next example (tab **D4**), we will see how
+In the next example ([tab **D4**](#tab-d4)), we will see how
 to rewrite this example to use nested schedulers, for better modularity.
 :::::
 
 :::::{tab-item} D4
+:label: tab-d4
 
-### Objectives
+### D4: Objectives
 
 In this section, we will change the `D3` script and illustrate a very convenient feature,
 that allows to create so-called **nested schedulers**; the idea is to be able to
@@ -379,7 +405,7 @@ A more detailed introduction to nested schedulers can be found
 So in this example we create a script that behaves exactly like in D3,
 but using a nested scheduler to provide for more modularity.
 
-### The code
+### D4: The code
 
 Notice:
 
@@ -400,31 +426,39 @@ The D4 scenario
 {download}`⬇ Download D4-prep.py <D-prep/D4-prep.py>`
 :::
 
-````{dropdown} Full code of D4-prep.py (without the diff highlighting)
+::::{tab-set}
+:::{tab-item} Full code
+:sync: code-full
+
 ```{literalinclude} D-prep/D4-prep.py
 :language: python
 :caption: D4-prep.py
 ```
-````
+:::
+:::{tab-item} Diff from D3
+:sync: code-diff
 
 ```{literalinclude} D-prep/D4-prep.diff
 :language: diff
 :caption: Changes from D3-prep.py to D4-prep.py
 ```
+:::
+::::
 
-### Sample output
+### D4: Sample output
 
 ````{dropdown} Sample output: $ python3 D4-prep.py --load --node-a 10 --node-b 20
 ```{literalinclude} D-prep/D4.out
 ```
 ````
 
-### Next
+### D4: Next
 
-We can now wrap up this D-series (tab **WRAP UP**).
+We can now wrap up this D-series ([tab **WRAP UP**](#tab-d-prep-wrap-up)).
 :::::
 
 :::::{tab-item} WRAP UP
+:label: tab-d-prep-wrap-up
 
 ### Summary
 You now have a complete toolset at your disposal, and should be able to create `nepi-ng` scripts for

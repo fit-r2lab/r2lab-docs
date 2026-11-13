@@ -20,7 +20,7 @@ where the reference is:
 
 The simplest answer is, make sure to add the relevant ssh key in your ssh agent.
 
-See also [the SSH AGENT tab of the nepi-ng install page](../nepi-ng/install.md).
+See also [the SSH AGENT tab of the nepi-ng install page](../nepi-ng/install.md#tab-install-ssh-agent).
 
 ### How can I send noise on a WiFi or 5G frequency
 

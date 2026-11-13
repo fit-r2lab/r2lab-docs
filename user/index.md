@@ -8,6 +8,7 @@ subtitle: The R2lab tutorials - let's get you started
 ::::::{tab-set}
 
 :::::{tab-item} INTRO
+:label: tab-index-intro
 ### Infrastructure
 
 [Sign up for an R2lab account](getting-started/registration.md)
@@ -91,6 +92,7 @@ subtitle: The R2lab tutorials - let's get you started
 :::::
 
 :::::{tab-item} CONTACT
+:label: tab-index-contact
 ### Contacts
 
 If you have any issue with these tutorials, or with using R2lab more

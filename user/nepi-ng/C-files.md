@@ -7,6 +7,7 @@ title: "nepi-ng - C - managing files"
 ::::::{tab-set}
 
 :::::{tab-item} INTRO
+:label: tab-c-files-intro
 
 ### Scenario
 
@@ -49,12 +50,13 @@ scheduler**. Of course the result is exactly the same, it's just
 another programming style that is probably worth considering.
 
 Let us start with copying files over to the
-node (tab **C1**) with the `Push` command object.
+node ([tab **C1**](#tab-c1)) with the `Push` command object.
 :::::
 
 :::::{tab-item} C1
+:label: tab-c1
 
-### Objective
+### C1: Objective
 
 We start over from scratch here, and to begin with, we want to
 
@@ -85,7 +87,7 @@ This is what the code below carries out; the things to outline in this code are
   the `RANDOM` file over to node1, and display its size and SHA1 sum,
   using a single instance of `SshJob`.
 
-### The code
+### C1: The code
 
 :::{div}
 :class: text-right
@@ -97,22 +99,23 @@ This is what the code below carries out; the things to outline in this code are
 :caption: C1-files.py
 ```
 
-### Sample output
+### C1: Sample output
 
 ````{dropdown} Sample output: $ python3 C1-files.py
 ```{literalinclude} C-files/C1.out
 ```
 ````
 
-### Next
+### C1: Next
 
-In the next section (tab **C2**) we will extend this
+In the next section ([tab **C2**](#tab-c2)) we will extend this
 scenario, and push the RANDOM file on another node using the wired network.
 :::::
 
 :::::{tab-item} C2
+:label: tab-c2
 
-### Objective
+### C2: Objective
 
 We extend the C1 scenario and push the RANDOM file from fit01 to fit02 over the wired network.
 
@@ -174,41 +177,49 @@ Finally, by setting `scheduler` on this `transfer_job` object, we
 automatically attach all the jobs in the sequence to the global
 scheduler.
 
-### The code
+### C2: The code
 
 :::{div}
 :class: text-right
 {download}`⬇ Download C2-files.py <C-files/C2-files.py>`
 :::
 
-````{dropdown} Full code of C2-files.py (without the diff highlighting)
+::::{tab-set}
+:::{tab-item} Full code
+:sync: code-full
+
 ```{literalinclude} C-files/C2-files.py
 :language: python
 :caption: C2-files.py
 ```
-````
+:::
+:::{tab-item} Diff from C1
+:sync: code-diff
 
 ```{literalinclude} C-files/C2-files.diff
 :language: diff
 :caption: Changes from C1-files.py to C2-files.py
 ```
+:::
+::::
 
-### Sample output
+### C2: Sample output
 
 ````{dropdown} Sample output: $ python3 C2-files.py
 ```{literalinclude} C-files/C2.out
 ```
 ````
 
-### Next
+### C2: Next
 
-In the next section (tab **C3**) we will see
+In the next section ([tab **C3**](#tab-c3)) we will see
 how to retrieve back that same file in order to close the loop.
 :::::
 
 :::::{tab-item} C3
+:label: tab-c3
 
-### Objective
+### C3: Objective
 
 In this scenario, we extend again C2 to close the loop, and retrieve
 our random file back on the local laptop.
@@ -227,43 +238,51 @@ The only new thing here is the use of a `Pull` object, which like for
 the `Push` object, can be used in a list of commands to run on a given
 node as part of a `SshJob`.
 
-### The code
+### C3: The code
 
 :::{div}
 :class: text-right
 {download}`⬇ Download C3-files.py <C-files/C3-files.py>`
 :::
 
-````{dropdown} Full code of C3-files.py (without the diff highlighting)
+::::{tab-set}
+:::{tab-item} Full code
+:sync: code-full
+
 ```{literalinclude} C-files/C3-files.py
 :language: python
 :caption: C3-files.py
 ```
-````
+:::
+:::{tab-item} Diff from C2
+:sync: code-diff
 
 ```{literalinclude} C-files/C3-files.diff
 :language: diff
 :caption: Changes from C2-files.py to C3-files.py
 ```
+:::
+::::
 
-### Sample output
+### C3: Sample output
 
 ````{dropdown} Sample output: $ python3 C3-files.py
 ```{literalinclude} C-files/C3.out
 ```
 ````
 
-### Next
+### C3: Next
 
 If this is your first reading, we suggest you skip
-C3bis (tab **C3bis**) and go directly to
-WRAPUP (tab **WRAP UP**) for a conclusion on this
+C3bis ([tab **C3bis**](#tab-c3bis)) and go directly to
+WRAPUP ([tab **WRAP UP**](#tab-c-files-wrap-up)) for a conclusion on this
 series.
 :::::
 
 :::::{tab-item} C3bis
+:label: tab-c3bis
 
-### Objective
+### C3bis: Objective
 
 In this particular scenario, we restart from C2.
 
@@ -286,7 +305,7 @@ and stop, and even monitor, a custom process. This is in
 `receiver_manager_script`, a small shell script that knows how to
 start, stop, and even monitor, a single-process service.
 
-### The code
+### C3bis: The code
 
 Below you can see the difference with `C2-files.py`; the plain code for `C3bis-files.py` is in the dropdown.
 
@@ -303,30 +322,38 @@ The C3bis scenario
 {download}`⬇ Download C3bis-files.py <C-files/C3bis-files.py>`
 :::
 
-````{dropdown} Full code of C3bis-files.py (without the diff highlighting)
+::::{tab-set}
+:::{tab-item} Full code
+:sync: code-full
+
 ```{literalinclude} C-files/C3bis-files.py
 :language: python
 :caption: C3bis-files.py
 ```
-````
+:::
+:::{tab-item} Diff from C2
+:sync: code-diff
 
 ```{literalinclude} C-files/C3bis-files.diff
 :language: diff
 :caption: Changes from C2-files.py to C3bis-files.py
 ```
+:::
+::::
 
-### Sample output
+### C3bis: Sample output
 
 ````{dropdown} Sample output: $ python3 C3bis-files.py
 ```{literalinclude} C-files/C3bis.out
 ```
 ````
 
-### Next
-We can now conclude this section (tab **WRAP UP**)
+### C3bis: Next
+We can now conclude this section ([tab **WRAP UP**](#tab-c-files-wrap-up))
 :::::
 
 :::::{tab-item} WRAP UP
+:label: tab-c-files-wrap-up
 
 In this C series , we have seen:
 

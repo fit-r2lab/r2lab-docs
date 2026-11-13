@@ -7,6 +7,7 @@ title: "R2lab Notebooks"
 ::::::{tab-set}
 
 :::::{tab-item} Intro
+:label: tab-notebooks-intro
 
 ### Jupyter notebooks for reproducible research
 
@@ -46,6 +47,7 @@ more capabilities.
 :::::
 
 :::::{tab-item} Radiomap
+:label: tab-notebooks-radiomap
 
 ### Building a radiomap
 
@@ -67,6 +69,7 @@ You can find the source for this notebook:
 :::::
 
 :::::{tab-item} batman/OLSR
+:label: tab-notebooks-batman-olsr
 
 ### Comparing batman *vs* OLSR
 

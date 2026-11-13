@@ -7,6 +7,7 @@ title: "Installing nepi-ng"
 ::::::{tab-set}
 
 :::::{tab-item} INSTALL
+:label: tab-install-install
 
 ### What is `nepi-ng` ?
 The commands that we have seen in the previous tutorial are useful for
@@ -92,6 +93,7 @@ $ python3 -c 'from r2lab import __version__; print(__version__)'
 :::::
 
 :::::{tab-item} SSH AGENT
+:label: tab-install-ssh-agent
 
 ### ssh and ssh-agent
 

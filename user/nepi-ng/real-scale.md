@@ -7,6 +7,7 @@ title: "nepi-ng - in real scale"
 ::::::{tab-set}
 
 :::::{tab-item} INTRO
+:label: tab-real-scale-intro
 
 ### Contents
 
@@ -19,6 +20,7 @@ We have grouped in this page a few more elaborate examples :
 :::::
 
 :::::{tab-item} MULTI PING
+:label: tab-real-scale-multi-ping
 
 ### Objective
 

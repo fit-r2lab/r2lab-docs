@@ -7,6 +7,7 @@ title: "Video Tutorials on YouTube"
 ::::::{tab-set}
 
 :::::{tab-item} Angle of Arrival
+:label: tab-youtube-angle-of-arrival
 
 ### Measuring WiFi angle of arrival
 
@@ -20,6 +21,7 @@ This video emphasizes the usage of NEPI as a tool for designing the experiment l
 :::::
 
 :::::{tab-item} OAI (early)
+:label: tab-youtube-oai-early
 
 ### Visiting the chamber using skype on top of a local 5G infrastructure based on OpenAirInterface
 
@@ -38,6 +40,7 @@ Later on, we use yet another node as a scrambling device to terminate the call.
 :::::
 
 :::::{tab-item} 5G in 5'
+:label: tab-youtube-5g-in-5
 
 ### Set up a 5G network in 5 minutes
 
@@ -55,6 +58,7 @@ The purpose is very similar to the previous one; here again we leverage OpenAirI
 :::::
 
 :::::{tab-item} 5G in 8' on k8s
+:label: tab-youtube-5g-in-8-on-k8s
 
 ### Set up a 5G network in 8 minutes over kubernetes
 
@@ -66,6 +70,7 @@ Same old again, but over a kubernets cluster deployed over a few worker nodes in
 :::::
 
 :::::{tab-item} OLSR vs batman
+:label: tab-youtube-olsr-vs-batman
 
 ### Comparing OLSR and batman
 

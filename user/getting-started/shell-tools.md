@@ -7,6 +7,7 @@ title: Shell tools in the gateway
 ::::::{tab-set}
 
 :::::{tab-item} LOG IN
+:label: tab-shell-tools-log-in
 ### Logging in the gateway
 
 Once you have [obtained a slice account on R2lab](registration.md), you can
@@ -110,11 +111,12 @@ rbye
 
 Please try to make sure to use it, especially when you have many nodes running.
 
-In the next tab, **SELECT NODES**, we will see how we can focus on a specific
+In [the next tab, **SELECT NODES**](#tab-shell-tools-select-nodes), we will see how we can focus on a specific
 set of nodes, and easily control them.
 :::::
 
 :::::{tab-item} SELECT NODES
+:label: tab-shell-tools-select-nodes
 ### Monitor what you're doing
 
 Be aware that you can have a global and live view of the testbed status
@@ -229,6 +231,7 @@ releases
 :::::
 
 :::::{tab-item} IMAGES
+:label: tab-shell-tools-images
 ### Loading images
 
 The tool for loading images is called `rload`. It is in fact a shortcut for
@@ -330,6 +333,7 @@ right to use `rhubarbe-share` (not documented here).
 :::::
 
 :::::{tab-item} PHONES
+:label: tab-shell-tools-phones
 ### Phones
 
 For now we have two commercial phones available right in the room; each phone
@@ -352,7 +356,7 @@ help
 
 to get a reminder.
 
-Please refer to [the 5G offering page](../5g.md) (PHONES tab) for more details on this offering, and how
+Please refer to [the 5G offering page](../5g.md) ([PHONES tab](../5g.md#tab-5g-phones)) for more details on this offering, and how
 to manage these phones e.g. through a VNC session.
 :::::
 

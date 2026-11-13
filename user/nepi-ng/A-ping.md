@@ -7,6 +7,7 @@ title: "nepi-ng A: the basics"
 ::::::{tab-set}
 
 :::::{tab-item} INTRO
+:label: tab-a-ping-intro
 In this series we run a few experiments that `ping` between various
 locations, over the networks available to experimenters in R2lab.
 
@@ -77,11 +78,12 @@ rwait
 Both nodes now run the default image. You can log out of `faraday` and
 go back to your laptop to run the steps below.
 
-Continue with the **A1** tab above.
+Continue with [the **A1** tab](#tab-a1) above.
 :::::
 
 :::::{tab-item} A1
-### Objective
+:label: tab-a1
+### A1: Objective
 
 Our first experiment code is designed to run on YOUR computer. From
 there we trigger a simple command on the R2lab gateway, that is to say
@@ -129,12 +131,13 @@ that you need to change manually in the code.
 ```
 ````
 
-**Next:** the **A2** tab - specifying your slice on the command line.
+**Next:** [the **A2** tab](#tab-a2) - specifying your slice on the command line.
 
 :::::
 
 :::::{tab-item} A2
-### Objectives
+:label: tab-a2
+### A2: Objectives
 
 * using the standard `argparse` module, we let users specify their
   slice on the command line with `--slice your_slicename`, without
@@ -157,29 +160,39 @@ them back.
 {download}`⬇ Download A2-ping.py <A-ping/A2-ping.py>`
 :::
 
-````{dropdown} Full code of A2-ping.py (without the diff highlighting)
+::::{tab-set}
+:::{tab-item} Full code
+:sync: code-full
+
 ```{literalinclude} A-ping/A2-ping.py
 :language: python
 :caption: A2-ping.py
 ```
-````
+:::
+:::{tab-item} Diff from A1
+:sync: code-diff
 
 ```{literalinclude} A-ping/A2-ping.diff
 :language: diff
 :caption: Changes from A1-ping.py to A2-ping.py
 ```
+:::
+::::
 
 ````{dropdown} Sample output: python3 A2-ping.py -s inria_radiomap
 ```{literalinclude} A-ping/A2.out
 ```
 ````
 
-**Next:** the **A3** tab - running commands on a node rather than on the gateway.
+**Next:** [the **A3** tab](#tab-a3) - running commands on a node rather than on the gateway.
 
 :::::
 
 :::::{tab-item} A3
-### Objective: controlling a node beyond the gateway
+:label: tab-a3
+### A3: Objective: 
+
+Controlling a node beyond the gateway
 
 This time we want to run the same `ping` command, but from a node, and
 not from the gateway.
@@ -209,29 +222,37 @@ The A3 scenario
 {download}`⬇ Download A3-ping.py <A-ping/A3-ping.py>`
 :::
 
-````{dropdown} Full code of A3-ping.py (without the diff highlighting)
+::::{tab-set}
+:::{tab-item} Full code
+:sync: code-full
+
 ```{literalinclude} A-ping/A3-ping.py
 :language: python
 :caption: A3-ping.py
 ```
-````
+:::
+:::{tab-item} Diff from A2
+:sync: code-diff
 
 ```{literalinclude} A-ping/A3-ping.diff
 :language: diff
 :caption: Changes from A2-ping.py to A3-ping.py
 ```
+:::
+::::
 
 ````{dropdown} Sample output: python3 A3-ping.py -v
 ```{literalinclude} A-ping/A3.out
 ```
 ````
 
-**Next:** the **A4** tab - checking for leases before running.
+**Next:** [the **A4** tab](#tab-a4) - checking for leases before running.
 
 :::::
 
 :::::{tab-item} A4
-### Objectives
+:label: tab-a4
+### A4: Objectives
 
 Our experiment performs the exact same thing, but before it does
 anything, it checks that we do have a valid reservation. This
@@ -297,17 +318,24 @@ The A4 scenario
 {download}`⬇ Download A4-ping.py <A-ping/A4-ping.py>`
 :::
 
-````{dropdown} Full code of A4-ping.py (without the diff highlighting)
+::::{tab-set}
+:::{tab-item} Full code
+:sync: code-full
+
 ```{literalinclude} A-ping/A4-ping.py
 :language: python
 :caption: A4-ping.py
 ```
-````
+:::
+:::{tab-item} Diff from A3
+:sync: code-diff
 
 ```{literalinclude} A-ping/A4-ping.diff
 :language: diff
 :caption: Changes from A3-ping.py to A4-ping.py
 ```
+:::
+::::
 
 ````{dropdown} Sample output: python3 A4-ping.py
 ```{literalinclude} A-ping/A4.out
@@ -321,12 +349,13 @@ $ python3 A4-ping.py -s inria_inria.oai.oai_build
 faraday.inria.fr:Checking current reservation for inria_inria.oai.oai_build WARNING: Access currently denied
 ```
 
-**Next:** the **A5** tab - using other network interfaces.
+**Next:** [the **A5** tab](#tab-a5) - using other network interfaces.
 
 :::::
 
 :::::{tab-item} A5
-### Objectives
+:label: tab-a5
+### A5: Objectives
 
 This time we run ping between two nodes of the testbed, over the
 `data` wired network.
@@ -377,28 +406,36 @@ The A5 scenario
 {download}`⬇ Download A5-ping.py <A-ping/A5-ping.py>`
 :::
 
-````{dropdown} Full code of A5-ping.py (without the diff highlighting)
+::::{tab-set}
+:::{tab-item} Full code
+:sync: code-full
+
 ```{literalinclude} A-ping/A5-ping.py
 :language: python
 :caption: A5-ping.py
 ```
-````
+:::
+:::{tab-item} Diff from A4
+:sync: code-diff
 
 ```{literalinclude} A-ping/A5-ping.diff
 :language: diff
 :caption: Changes from A4-ping.py to A5-ping.py
 ```
+:::
+::::
 
 ````{dropdown} Sample output: python3 A5-ping.py
 ```{literalinclude} A-ping/A5.out
 ```
 ````
 
-**Next:** the **WRAP UP** tab.
+**Next:** [the **WRAP UP** tab](#tab-a-ping-wrap-up).
 
 :::::
 
 :::::{tab-item} WRAP UP
+:label: tab-a-ping-wrap-up
 ### Summary
 
 At this point you should have a good grasp of these R2lab fundamentals.

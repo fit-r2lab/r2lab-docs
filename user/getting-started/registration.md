@@ -7,6 +7,7 @@ title: R2lab registration
 ::::::{tab-set}
 
 :::::{tab-item} 1. REGISTER
+:label: tab-registration-1-register
 ### Introduction
 
 First of all, welcome to R2lab; you are now part of a community of researchers
@@ -59,7 +60,7 @@ contain
 
 From that point you can log in into the [Reservation Portal](https://r2lab.inria.fr/)
 and you are almost ready to go, but you still need to **upload an SSH key**
-before you can do anything useful. Let's move to the next tab, **2. SSHKEY**,
+before you can do anything useful. Let's move to [the next tab, **2. SSHKEY**](#tab-registration-2-sshkey),
 to do that.
 
 :::{note}
@@ -71,6 +72,7 @@ contact us directly on the R2lab support mailing list
 :::::
 
 :::::{tab-item} 2. SSHKEY
+:label: tab-registration-2-sshkey
 ### Uploading your SSH public key to R2lab
 
 Before you can start using the R2lab testbed, you'll need to **upload your SSH
@@ -142,11 +144,12 @@ Once this is done, you should see something like this:
 An uploaded SSH key
 ```
 
-You can then move to the next tab, **3. RESERVATION**, to book your slices in
+You can then move to [the next tab, **3. RESERVATION**](#tab-registration-3-reservation), to book your slices in
 R2lab.
 :::::
 
 :::::{tab-item} 3. RESERVATION
+:label: tab-registration-3-reservation
 ### Make the reservation
 
 In order to use R2lab, you must reserve the testbed. The right way to do this
@@ -176,11 +179,12 @@ Other actions you can do in the calendar:
 Booking a slice in R2lab
 ```
 
-When this is done, you can move to the next tab, **4. ACCESS**, to access the
+When this is done, you can move to [the next tab, **4. ACCESS**](#tab-registration-4-access), to access the
 R2lab platform and run your tests.
 :::::
 
 :::::{tab-item} 4. ACCESS
+:label: tab-registration-4-access
 ### The ssh agent
 
 This step is optional, but worth reading for beginners.
