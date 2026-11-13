@@ -39,6 +39,7 @@ project:
         - file: hardware/one.md
         - file: hardware/two.md
 site:
+  template: https://github.com/flotpython/myst-theme/releases/download/custom/book-theme.zip
   title: R2lab docs
   logo: assets/logo.svg
   logo_alt: SLICES-RI - FIT - R2lab
