@@ -309,6 +309,15 @@ start, stop, and even monitor, a single-process service.
 
 Below you can see the difference with `C2-files.py`; the plain code for `C3bis-files.py` is in the dropdown.
 
+:::{div}
+:class: text-right
+{download}`⬇ Download C3bis-files.py <C-files/C3bis-files.py>`
+:::
+
+::::{tab-set}
+:::{tab-item} Graph
+:sync: code-graph
+
 ```{figure} C-files/C3bis.png
 :width: 60%
 :align: center
@@ -316,13 +325,7 @@ Below you can see the difference with `C2-files.py`; the plain code for `C3bis-f
 
 The C3bis scenario
 ```
-
-:::{div}
-:class: text-right
-{download}`⬇ Download C3bis-files.py <C-files/C3bis-files.py>`
 :::
-
-::::{tab-set}
 :::{tab-item} Full code
 :sync: code-full
 

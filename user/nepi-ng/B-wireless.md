@@ -207,6 +207,15 @@ About that last point, note that other types of formatters are
 
 ### B2: The code
 
+:::{div}
+:class: text-right
+{download}`⬇ Download B2-wireless.py <B-wireless/B2-wireless.py>`
+:::
+
+::::{tab-set}
+:::{tab-item} Graph
+:sync: code-graph
+
 ```{figure} B-wireless/B2.png
 :width: 60%
 :align: center
@@ -214,13 +223,7 @@ About that last point, note that other types of formatters are
 
 The B2 scenario
 ```
-
-:::{div}
-:class: text-right
-{download}`⬇ Download B2-wireless.py <B-wireless/B2-wireless.py>`
 :::
-
-::::{tab-set}
 :::{tab-item} Full code
 :sync: code-full
 
@@ -313,6 +316,15 @@ foo arg:  3 4
 
 Make sure you download both files in the same location before trying to run the python script.
 
+:::{div}
+:class: text-right
+{download}`⬇ Download B3-wireless.py <B-wireless/B3-wireless.py>`
+:::
+
+::::{tab-set}
+:::{tab-item} Graph
+:sync: code-graph
+
 ```{figure} B-wireless/B3.png
 :width: 60%
 :align: center
@@ -320,13 +332,7 @@ Make sure you download both files in the same location before trying to run the 
 
 The B3 scenario
 ```
-
-:::{div}
-:class: text-right
-{download}`⬇ Download B3-wireless.py <B-wireless/B3-wireless.py>`
 :::
-
-::::{tab-set}
 :::{tab-item} Full code
 :sync: code-full
 
@@ -400,6 +406,15 @@ schedulers:
 
 ### B4: The code
 
+:::{div}
+:class: text-right
+{download}`⬇ Download B4-wireless.py <B-wireless/B4-wireless.py>`
+:::
+
+::::{tab-set}
+:::{tab-item} Graph
+:sync: code-graph
+
 ```{figure} B-wireless/B4.png
 :width: 60%
 :align: center
@@ -407,13 +422,7 @@ schedulers:
 
 The B4 scenario
 ```
-
-:::{div}
-:class: text-right
-{download}`⬇ Download B4-wireless.py <B-wireless/B4-wireless.py>`
 :::
-
-::::{tab-set}
 :::{tab-item} Full code
 :sync: code-full
 
@@ -461,6 +470,15 @@ instead of showing plain wall clock time.
 
 ### B5: The code
 
+:::{div}
+:class: text-right
+{download}`⬇ Download B5-wireless.py <B-wireless/B5-wireless.py>`
+:::
+
+::::{tab-set}
+:::{tab-item} Graph
+:sync: code-graph
+
 ```{figure} B-wireless/B5.png
 :width: 60%
 :align: center
@@ -468,13 +486,7 @@ instead of showing plain wall clock time.
 
 The B5 scenario
 ```
-
-:::{div}
-:class: text-right
-{download}`⬇ Download B5-wireless.py <B-wireless/B5-wireless.py>`
 :::
-
-::::{tab-set}
 :::{tab-item} Full code
 :sync: code-full
 

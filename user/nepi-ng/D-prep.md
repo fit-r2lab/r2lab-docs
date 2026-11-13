@@ -159,6 +159,15 @@ The A5 scenario
 Every time we will see a piece of code, you can download the raw code
 with the download link above it.
 
+:::{div}
+:class: text-right
+{download}`⬇ Download D1-prep.py <D-prep/D1-prep.py>`
+:::
+
+::::{tab-set}
+:::{tab-item} Graph
+:sync: code-graph
+
 ```{figure} D-prep/D1.png
 :width: 60%
 :align: center
@@ -166,13 +175,7 @@ with the download link above it.
 
 The D1 scenario
 ```
-
-:::{div}
-:class: text-right
-{download}`⬇ Download D1-prep.py <D-prep/D1-prep.py>`
 :::
-
-::::{tab-set}
 :::{tab-item} Full code
 :sync: code-full
 
@@ -249,6 +252,15 @@ new dependency graph.
 
 ### D2: The code
 
+:::{div}
+:class: text-right
+{download}`⬇ Download D2-prep.py <D-prep/D2-prep.py>`
+:::
+
+::::{tab-set}
+:::{tab-item} Graph
+:sync: code-graph
+
 ```{figure} D-prep/D2.png
 :width: 60%
 :align: center
@@ -256,13 +268,7 @@ new dependency graph.
 
 The D2 scenario
 ```
-
-:::{div}
-:class: text-right
-{download}`⬇ Download D2-prep.py <D-prep/D2-prep.py>`
 :::
-
-::::{tab-set}
 :::{tab-item} Full code
 :sync: code-full
 
@@ -324,6 +330,15 @@ A complete reference can be [found on readthedocs.io](http://r2lab.readthedocs.i
 
 ### D3: The code
 
+:::{div}
+:class: text-right
+{download}`⬇ Download D3-prep.py <D-prep/D3-prep.py>`
+:::
+
+::::{tab-set}
+:::{tab-item} Graph
+:sync: code-graph
+
 ```{figure} D-prep/D3.png
 :width: 60%
 :align: center
@@ -331,13 +346,7 @@ A complete reference can be [found on readthedocs.io](http://r2lab.readthedocs.i
 
 The D3 scenario
 ```
-
-:::{div}
-:class: text-right
-{download}`⬇ Download D3-prep.py <D-prep/D3-prep.py>`
 :::
-
-::::{tab-set}
 :::{tab-item} Full code
 :sync: code-full
 
@@ -413,6 +422,15 @@ Notice:
 * how the reusable `check_lease` function decorates `experiment_scheduler`
 so as to first check for the lease.
 
+:::{div}
+:class: text-right
+{download}`⬇ Download D4-prep.py <D-prep/D4-prep.py>`
+:::
+
+::::{tab-set}
+:::{tab-item} Graph
+:sync: code-graph
+
 ```{figure} D-prep/D4.png
 :width: 60%
 :align: center
@@ -420,13 +438,7 @@ so as to first check for the lease.
 
 The D4 scenario
 ```
-
-:::{div}
-:class: text-right
-{download}`⬇ Download D4-prep.py <D-prep/D4-prep.py>`
 :::
-
-::::{tab-set}
 :::{tab-item} Full code
 :sync: code-full
 

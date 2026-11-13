@@ -209,6 +209,15 @@ the code with the `--slice` option if needed), and `fit01` must be up
 and running.
 :::
 
+:::{div}
+:class: text-right
+{download}`⬇ Download A3-ping.py <A-ping/A3-ping.py>`
+:::
+
+::::{tab-set}
+:::{tab-item} Graph
+:sync: code-graph
+
 ```{figure} A-ping/A3.png
 :width: 60%
 :align: center
@@ -216,13 +225,7 @@ and running.
 
 The A3 scenario
 ```
-
-:::{div}
-:class: text-right
-{download}`⬇ Download A3-ping.py <A-ping/A3-ping.py>`
 :::
-
-::::{tab-set}
 :::{tab-item} Full code
 :sync: code-full
 
@@ -284,13 +287,9 @@ anything, it checks that we do have a valid reservation. This
 
 ### Graphical view
 
-% TODO: once nested tabs work in the theme, move this graphical view (and the
-% figure) into the tabbed navbar of the A4 code section, next to the code and
-% diff, as in the original Graph tab - instead of showing it inline here.
-
 For the first time we use `export_as_dotfile` on the `Scheduler` to
 produce a graphical representation of the jobs' `required`
-dependencies, shown below.
+dependencies, shown in the **Graph** tab of the code below.
 
 The code only produces a `dot` file, so it runs even without the
 `graphviz` library installed. Turn it into a `png` with any program
@@ -305,6 +304,15 @@ file. See the
 [asynciojobs documentation](http://asynciojobs.readthedocs.io/en/latest/README.html#visualization-in-a-notebook-scheduler-graph).
 :::
 
+:::{div}
+:class: text-right
+{download}`⬇ Download A4-ping.py <A-ping/A4-ping.py>`
+:::
+
+::::{tab-set}
+:::{tab-item} Graph
+:sync: code-graph
+
 ```{figure} A-ping/A4.png
 :width: 60%
 :align: center
@@ -312,13 +320,7 @@ file. See the
 
 The A4 scenario
 ```
-
-:::{div}
-:class: text-right
-{download}`⬇ Download A4-ping.py <A-ping/A4-ping.py>`
 :::
-
-::::{tab-set}
 :::{tab-item} Full code
 :sync: code-full
 
@@ -393,6 +395,15 @@ Worth noticing in the code:
 * in the epilogue we check that ping actually succeeded, using
   `result()` on an `SshJob` instance.
 
+:::{div}
+:class: text-right
+{download}`⬇ Download A5-ping.py <A-ping/A5-ping.py>`
+:::
+
+::::{tab-set}
+:::{tab-item} Graph
+:sync: code-graph
+
 ```{figure} A-ping/A5.png
 :width: 60%
 :align: center
@@ -400,13 +411,7 @@ Worth noticing in the code:
 
 The A5 scenario
 ```
-
-:::{div}
-:class: text-right
-{download}`⬇ Download A5-ping.py <A-ping/A5-ping.py>`
 :::
-
-::::{tab-set}
 :::{tab-item} Full code
 :sync: code-full
 
